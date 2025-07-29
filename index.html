@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navas - Excelência em Gestão de Pessoas</title>
+    <style>
+        :root {
+            /* Cores Atualizadas */
+            --cor-primaria: #f2f2f2;
+            --cor-secundaria: #002f5f;
+            --cor-fundo: #f5f7f9;
+            --cor-texto: #1f1f1f;
+            --cor-clara: #fff;
+            --cor-subtexto: #555;
+            --cor-footer: #ccc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-fundo);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--cor-primaria);
+            color: var(--cor-secundaria); /* Alterado para contraste */
+            padding: 20px 40px;
+        }
+
+        header img {
+            height: 250px;
+            background-color: var(--cor-primaria);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav {
+            background: var(--cor-secundaria);
+            padding: 10px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #ccc; 
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--cor-clara);
+        }
+
+        .hero {
+            background: url("banner.png") center/cover no-repeat;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 30px 0;
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .service {
+            background: var(--cor-clara);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .service h3 {
+            color: var(--cor-secundaria); 
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: var(--cor-subtexto);
+        }
+
+        #about {
+            background: var(--cor-clara);
+        }
+        
+        #about .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #about p {
+            color: var(--cor-subtexto);
+            text-align: left;
+            margin-bottom: 1.2em;
+        }
+
+        #contato {
+            padding: 0;
+            background: var(--cor-secundaria);
+        }
+
+        .contact-centered {
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .contact-centered h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-centered p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: var(--cor-secundaria);
+            color: var(--cor-footer);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo Navas" />
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre mim</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Excelência em Gestão de Pessoas</h2>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2 style="text-align:center; margin-bottom: 40px;">Sobre mim</h2>
+            <p>
+                Sou Renato Navas, mentor e estrategista em desenvolvimento de liderança com foco em transformação cultural. Minha jornada começou no campo da Psicologia e floresceu no mundo corporativo e no empreendedorismo, onde descobri que liderar é mais do que ocupar um cargo: é transformar relações, ambientes e futuros.
+            </p>
+            <p>
+                Ao longo dos anos, desenvolvi o Modelo de Liderança Integral — uma metodologia própria que une autoconhecimento, inteligência emocional e uma leitura sistêmica da organização. Esse modelo nasceu da prática, da escuta profunda e da necessidade urgente de formar líderes capazes de ver além do óbvio e agir com intencionalidade diante da complexidade.
+            </p>
+            <p>
+                Acredito em uma liderança que transforma porque se permite transformar. Que enxerga a cultura como um organismo vivo, moldado pelas relações, pelas decisões e pelos silêncios. Meu trabalho é capacitar líderes a assumirem um papel mais consciente, estratégico e humano, capazes de gerar impacto sustentável sem abrir mão da saúde das relações.
+            </p>
+            <p>
+                Se a sua empresa está passando por uma reestruturação, atravessando tensões entre cultura e performance, ou buscando ampliar o protagonismo de suas lideranças, posso ajudá-la a criar um ambiente mais coeso, saudável e potente. Atuo diretamente com presidentes, diretores, RHs e times executivos para desbloquear o potencial da liderança e gerar mudanças reais no comportamento organizacional.
+            </p>
+            <p>
+                Mais do que ensinar, provoco reflexões. Mais do que fórmulas prontas, entrego caminhos que nascem da escuta e da prática. Acredito que o futuro das organizações está na convergência entre resultados e relações. E é nesse ponto de encontro que meu trabalho acontece.
+            </p>
+            <p>
+                Se você busca uma abordagem profunda, humanizada e alinhada às exigências do nosso tempo, talvez possamos caminhar juntos.
+            </p>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2 style="text-align:center; margin-bottom: 40px;">Meus Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Desenvolvimento de Liderança</h3>
+                <p>Programas completos para o desenvolvimento de líderes e equipes.</p>
+            </div>
+            <div class="service">
+                <h3>Coaching e Mentoring</h3>
+                <p>Sessões individuais ou em grupo para aceleração de resultados.</p>
+            </div>
+            <div class="service">
+                <h3>Palestras</h3>
+                <p>Palestras e workshops sobre liderança, cultura e transformação.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contact-centered">
+            <h3>Entre em Contato</h3>
+            <p>Rua Antero Chaves, 216, Dom Bosco, Itajai, SC</p>
+            <p>Email: contato@renatonavas.com.br</p>
+            <p>Telefone: (47) 99973-6061</p>
+            <p>Razão Social: Navas Excelencia em Gestao de Pessoas LTDA</p>
+            <p>CNPJ: 53.769.950/0001-41</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Navas. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
